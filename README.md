@@ -70,8 +70,3 @@ For a new Python project, copy the Conda template into the project and follow th
 
 The setup is designed to be applied a piece at a time. Back up an existing configuration before replacing it, and check each guide for external tools or accounts that a feature depends on.
 
-## Privacy and Portability
-
-These files are personal starting points, not universal defaults. Paths, installed tools, browser versions, and Linux package availability can vary. The guides are written primarily for Kubuntu; adapting them to another distribution or operating system may require changing installation steps.
-
-Do not commit API keys, passwords, private connection strings, or other credentials. Keep machine-specific values in private local configuration, and inspect files or Repoclip snapshots before sharing them publicly or with an AI service.
