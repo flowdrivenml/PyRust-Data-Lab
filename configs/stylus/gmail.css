@@ -1,0 +1,414 @@
+/* =========================================================
+   Gmail — Tokyo Night
+   ========================================================= */
+
+:root {
+  --tn-bg: #1a1b26;
+  --tn-bg-dark: #15161e;
+  --tn-bg-soft: #24283b;
+  --tn-bg-hover: #292e42;
+  --tn-bg-active: #33467c;
+
+  --tn-border: #414868;
+
+  --tn-text: #c0caf5;
+  --tn-text-soft: #a9b1d6;
+  --tn-muted: #737aa2;
+
+  --tn-blue: #7aa2f7;
+  --tn-cyan: #7dcfff;
+  --tn-purple: #bb9af7;
+  --tn-green: #9ece6a;
+  --tn-yellow: #e0af68;
+  --tn-red: #f7768e;
+}
+
+
+/* =========================================================
+   Main Gmail canvas
+   ========================================================= */
+
+html,
+body,
+.aeJ,
+.aeF,
+.nH {
+  background: var(--tn-bg) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   Top header / toolbar
+   ========================================================= */
+
+.gb_Ha,
+.gb_Ja,
+.gb_Ka,
+.gb_qa,
+[role="banner"] {
+  background-color: var(--tn-bg-dark) !important;
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+
+/* =========================================================
+   Search bar
+   ========================================================= */
+
+.gb_Se,
+.gb_ze,
+[role="search"] {
+  background-color: var(--tn-bg-soft) !important;
+  border-color: var(--tn-border) !important;
+}
+
+[role="search"] input {
+  background-color: transparent !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   Left sidebar
+   ========================================================= */
+
+.aeN,
+.aeO,
+.aeP,
+.TK,
+.n6 {
+  background-color: var(--tn-bg-dark) !important;
+  color: var(--tn-text-soft) !important;
+}
+
+
+/* Sidebar rows */
+
+.TO,
+.n6,
+.aHS-bnt {
+  border-radius: 8px !important;
+}
+
+.TO:hover,
+.n6:hover,
+.aHS-bnt:hover {
+  background-color: var(--tn-bg-hover) !important;
+}
+
+
+/* Selected sidebar item */
+
+.TO.NQ,
+.TO.nZ {
+  background-color: var(--tn-bg-active) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   Compose button
+   ========================================================= */
+
+.T-I.T-I-KE {
+  background-color: var(--tn-bg-soft) !important;
+  color: var(--tn-text) !important;
+  border: 1px solid var(--tn-border) !important;
+}
+
+.T-I.T-I-KE:hover {
+  background-color: var(--tn-bg-hover) !important;
+}
+
+
+/* =========================================================
+   Inbox toolbar
+   ========================================================= */
+
+.G-atb,
+.aqJ,
+.aqK,
+.aqL {
+  background-color: var(--tn-bg-soft) !important;
+  border-color: var(--tn-border) !important;
+}
+
+
+/* =========================================================
+   Category tabs
+   ========================================================= */
+
+.aKz,
+.aKz > div {
+  background-color: var(--tn-bg-soft) !important;
+  color: var(--tn-text-soft) !important;
+  border-color: var(--tn-border) !important;
+}
+
+.aKz:hover {
+  background-color: var(--tn-bg-hover) !important;
+}
+
+
+/* =========================================================
+   Email list rows
+   ========================================================= */
+
+.zA {
+  background-color: var(--tn-bg-dark) !important;
+  color: var(--tn-text-soft) !important;
+  border-color: var(--tn-border) !important;
+}
+
+.zA:hover {
+  background-color: var(--tn-bg-hover) !important;
+}
+
+
+/* Unread email */
+
+.zE {
+  background-color: var(--tn-bg-soft) !important;
+}
+
+.zE .yW,
+.zE .bog,
+.zE .y2 {
+  color: var(--tn-text) !important;
+  font-weight: 600 !important;
+}
+
+
+/* Read email */
+
+.yO {
+  background-color: var(--tn-bg-dark) !important;
+}
+
+
+/* Sender */
+
+.yW,
+.yW span {
+  color: var(--tn-text-soft) !important;
+}
+
+
+/* Subject */
+
+.bog {
+  color: var(--tn-text) !important;
+}
+
+
+/* Preview text */
+
+.y2 {
+  color: var(--tn-muted) !important;
+}
+
+
+/* Date */
+
+.xW,
+.xY {
+  color: var(--tn-text-soft) !important;
+}
+
+
+/* =========================================================
+   Message view
+   ========================================================= */
+
+.a3s,
+.ii.gt,
+.adn,
+.h7 {
+  background-color: var(--tn-bg) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* Message header */
+
+.gE,
+.gD,
+.go {
+  color: var(--tn-text-soft) !important;
+}
+
+
+/* =========================================================
+   Compose window
+   ========================================================= */
+
+.M9,
+.AD,
+.Am,
+.AO {
+  background-color: var(--tn-bg-soft) !important;
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+.Am.Al.editable,
+[contenteditable="true"] {
+  background-color: var(--tn-bg-soft) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* Compose header */
+
+.aYF {
+  background-color: var(--tn-bg-dark) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   Buttons / controls
+   ========================================================= */
+
+button,
+[role="button"] {
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+button:hover,
+[role="button"]:hover {
+  background-color: var(--tn-bg-hover) !important;
+}
+
+
+/* =========================================================
+   Menus / dialogs / popovers
+   ========================================================= */
+
+[role="menu"],
+[role="dialog"],
+[role="listbox"],
+.J-M,
+.b8,
+.Kj-JD {
+  background-color: var(--tn-bg-dark) !important;
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+
+/* Menu rows */
+
+[role="menuitem"],
+.J-N {
+  color: var(--tn-text-soft) !important;
+}
+
+[role="menuitem"]:hover,
+.J-N:hover {
+  background-color: var(--tn-bg-hover) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   Inputs
+   ========================================================= */
+
+input,
+textarea {
+  background-color: var(--tn-bg-soft) !important;
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--tn-muted) !important;
+}
+
+
+/* =========================================================
+   Links
+   ========================================================= */
+
+a {
+  color: var(--tn-blue) !important;
+}
+
+a:hover {
+  color: var(--tn-cyan) !important;
+}
+
+
+/* =========================================================
+   Borders
+   ========================================================= */
+
+hr,
+[class*="border"] {
+  border-color: var(--tn-border) !important;
+}
+
+
+/* =========================================================
+   Gmail-specific dark gray fallbacks
+   ========================================================= */
+
+[style*="background-color: rgb(32"],
+[style*="background-color: rgb(40"],
+[style*="background-color: rgb(48"],
+[style*="background-color: rgb(60"] {
+  background-color: var(--tn-bg-soft) !important;
+}
+
+
+/* =========================================================
+   Literal black/gray fixes
+   ========================================================= */
+
+[style*="background-color: black"],
+[style*="background: black"],
+[style*="background-color: #000"] {
+  background-color: var(--tn-bg-dark) !important;
+}
+
+
+/* =========================================================
+   Selection / scrollbar
+   ========================================================= */
+
+::selection {
+  background-color: var(--tn-bg-active) !important;
+  color: var(--tn-text) !important;
+}
+
+* {
+  scrollbar-color: var(--tn-border) var(--tn-bg-dark) !important;
+}
+
+
+/* =========================================================
+   Icons
+   ========================================================= */
+
+svg,
+[role="img"] {
+  color: var(--tn-text-soft);
+}
+
+
+/* =========================================================
+   Rounded surfaces
+   ========================================================= */
+
+[role="button"],
+[role="menu"],
+[role="dialog"],
+input,
+textarea {
+  border-radius: 8px !important;
+}

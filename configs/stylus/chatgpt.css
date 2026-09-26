@@ -1,0 +1,626 @@
+/* =========================================================
+   ChatGPT — Tokyo Night
+   ========================================================= */
+
+:root {
+  --tn-bg: #1a1b26;
+  --tn-bg-dark: #15161e;
+  --tn-bg-soft: #24283b;
+  --tn-bg-hover: #292e42;
+  --tn-bg-active: #33467c;
+
+  --tn-border: #414868;
+  --tn-border-soft: #2f3549;
+
+  --tn-text: #c0caf5;
+  --tn-text-soft: #a9b1d6;
+  --tn-muted: #737aa2;
+
+  --tn-blue: #7aa2f7;
+  --tn-cyan: #7dcfff;
+  --tn-purple: #bb9af7;
+  --tn-green: #9ece6a;
+  --tn-yellow: #e0af68;
+  --tn-red: #f7768e;
+  --tn-orange: #ff9e64;
+}
+
+
+/* =========================================================
+   Main document
+   ========================================================= */
+
+html,
+body,
+#root {
+  background: var(--tn-bg) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   Main application surfaces
+   ========================================================= */
+
+main,
+section,
+article {
+  background-color: var(--tn-bg) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   Sidebar
+   ========================================================= */
+
+nav,
+aside {
+  background-color: var(--tn-bg-dark) !important;
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+
+/* Sidebar items */
+
+nav a,
+aside a,
+nav button,
+aside button {
+  color: var(--tn-text-soft) !important;
+}
+
+nav a:hover,
+aside a:hover,
+nav button:hover,
+aside button:hover {
+  background-color: var(--tn-bg-hover) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   Selected / active items
+   ========================================================= */
+
+[aria-current="page"],
+[aria-selected="true"],
+[data-state="active"] {
+  background-color: var(--tn-bg-soft) !important;
+  color: var(--tn-blue) !important;
+}
+
+
+/* =========================================================
+   Text
+   ========================================================= */
+
+p,
+span,
+div,
+label {
+  border-color: var(--tn-border-soft);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--tn-text) !important;
+}
+
+small {
+  color: var(--tn-muted) !important;
+}
+
+
+/* =========================================================
+   Links
+   ========================================================= */
+
+a {
+  color: var(--tn-blue) !important;
+}
+
+a:hover {
+  color: var(--tn-cyan) !important;
+}
+
+
+/* =========================================================
+   Composer
+   ========================================================= */
+
+textarea,
+input,
+[contenteditable="true"] {
+  background-color: var(--tn-bg-soft) !important;
+  color: var(--tn-text) !important;
+  caret-color: var(--tn-blue) !important;
+
+  border-color: var(--tn-border) !important;
+}
+
+textarea::placeholder,
+input::placeholder,
+[contenteditable="true"]:empty::before {
+  color: var(--tn-muted) !important;
+}
+
+
+/* Composer outer surfaces */
+
+form {
+  border-color: var(--tn-border) !important;
+}
+
+
+/* =========================================================
+   Buttons
+   ========================================================= */
+
+button {
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+button:hover {
+  background-color: var(--tn-bg-hover) !important;
+}
+
+button:active {
+  background-color: var(--tn-bg-active) !important;
+}
+
+
+/* =========================================================
+   Popups / menus
+   ========================================================= */
+
+[role="menu"],
+[role="listbox"],
+[role="dialog"],
+[role="tooltip"],
+[role="presentation"] {
+  background-color: var(--tn-bg-dark) !important;
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+
+/* Menu items */
+
+[role="menuitem"],
+[role="option"] {
+  color: var(--tn-text-soft) !important;
+}
+
+[role="menuitem"]:hover,
+[role="option"]:hover {
+  background-color: var(--tn-bg-hover) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   Dialog overlays
+   ========================================================= */
+
+[aria-modal="true"] {
+  background-color: var(--tn-bg-dark) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   Borders
+   ========================================================= */
+
+[class*="border"] {
+  border-color: var(--tn-border-soft) !important;
+}
+
+hr {
+  border-color: var(--tn-border-soft) !important;
+}
+
+
+/* =========================================================
+   Code
+   ========================================================= */
+
+pre {
+  background-color: var(--tn-bg-dark) !important;
+  color: var(--tn-text) !important;
+  border: 1px solid var(--tn-border) !important;
+
+  border-radius: 10px !important;
+}
+
+code {
+  color: var(--tn-text) !important;
+}
+
+
+/* Inline code */
+
+:not(pre) > code {
+  background-color: var(--tn-bg-soft) !important;
+  color: var(--tn-cyan) !important;
+
+  padding: 2px 5px !important;
+  border-radius: 5px !important;
+}
+
+
+/* =========================================================
+   Markdown tables
+   ========================================================= */
+
+table {
+  border-color: var(--tn-border) !important;
+}
+
+thead {
+  background-color: var(--tn-bg-soft) !important;
+}
+
+th {
+  color: var(--tn-blue) !important;
+}
+
+td,
+th {
+  border-color: var(--tn-border) !important;
+}
+
+
+/* =========================================================
+   Blockquotes
+   ========================================================= */
+
+blockquote {
+  border-left-color: var(--tn-purple) !important;
+  color: var(--tn-text-soft) !important;
+}
+
+
+/* =========================================================
+   Selection
+   ========================================================= */
+
+::selection {
+  background-color: #33467c !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   Focus
+   ========================================================= */
+
+*:focus-visible {
+  outline-color: var(--tn-blue) !important;
+}
+
+
+/* =========================================================
+   Scrollbars
+   ========================================================= */
+
+* {
+  scrollbar-color:
+    var(--tn-border)
+    var(--tn-bg-dark) !important;
+
+  scrollbar-width: thin;
+}
+
+
+/* Chromium-style scrollbar fallback */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--tn-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tn-border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tn-muted);
+}
+
+
+/* =========================================================
+   Checkboxes / toggles
+   ========================================================= */
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--tn-blue) !important;
+}
+
+
+/* =========================================================
+   SVG / icons
+   ========================================================= */
+
+svg {
+  color: inherit;
+}
+
+
+/* =========================================================
+   Generic dark surfaces
+   ========================================================= */
+
+[class*="bg-black"],
+[class*="bg-gray"],
+[class*="bg-token"] {
+  border-color: var(--tn-border-soft) !important;
+}
+
+
+/* =========================================================
+   Rounded appearance
+   ========================================================= */
+
+button,
+textarea,
+input,
+pre,
+[role="dialog"],
+[role="menu"],
+[role="listbox"] {
+  border-radius: 10px !important;
+}
+
+
+/* =========================================================
+   Hover polish
+   ========================================================= */
+
+button,
+a,
+[role="menuitem"],
+[role="option"] {
+  transition:
+    background-color 0.12s ease,
+    color 0.12s ease,
+    border-color 0.12s ease !important;
+}
+
+
+/* =========================================================
+   Images
+   ========================================================= */
+
+img {
+  border-color: var(--tn-border) !important;
+}
+
+
+/* =========================================================
+   Tokyo Night accents
+   ========================================================= */
+
+strong {
+  color: var(--tn-text) !important;
+}
+
+kbd {
+  background: var(--tn-bg-soft) !important;
+  color: var(--tn-yellow) !important;
+  border-color: var(--tn-border) !important;
+}
+
+
+/* =========================================================
+   Conversation area
+   ========================================================= */
+
+[data-message-author-role="assistant"],
+[data-message-author-role="user"] {
+  color: var(--tn-text) !important;
+}
+
+
+/* User message */
+
+[data-message-author-role="user"] {
+  --message-bg: var(--tn-bg-soft);
+}
+
+
+/* =========================================================
+   Prevent bright white surfaces
+   ========================================================= */
+
+[style*="background-color: white"],
+[style*="background-color: rgb(255"],
+[style*="background: white"] {
+  background-color: var(--tn-bg-soft) !important;
+}
+
+
+/* =========================================================
+   Status / badges
+   ========================================================= */
+
+[role="status"] {
+  color: var(--tn-text-soft) !important;
+}
+
+
+/* =========================================================
+   Final background enforcement
+   ========================================================= */
+
+body {
+  background-color: var(--tn-bg) !important;
+}
+
+/* =========================================================
+   ChatGPT Tokyo Night — Remaining black surface fixes
+   ========================================================= */
+
+:root,
+.dark {
+  --main-surface-primary: #1a1b26 !important;
+  --main-surface-secondary: #15161e !important;
+  --main-surface-tertiary: #24283b !important;
+
+  --sidebar-surface-primary: #15161e !important;
+  --sidebar-surface-secondary: #1a1b26 !important;
+  --sidebar-surface-tertiary: #24283b !important;
+
+  --composer-surface-primary: #24283b !important;
+
+  --menu-surface-primary: #15161e !important;
+  --menu-surface-secondary: #24283b !important;
+
+  --message-surface: #24283b !important;
+
+  --border-light: #414868 !important;
+  --border-medium: #414868 !important;
+
+  --text-primary: #c0caf5 !important;
+  --text-secondary: #a9b1d6 !important;
+  --text-tertiary: #737aa2 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Sidebar surfaces
+   --------------------------------------------------------- */
+
+[class*="sidebar"],
+[class*="Sidebar"] {
+  border-color: #414868 !important;
+}
+
+[class*="bg-token-sidebar-surface-primary"] {
+  background-color: #15161e !important;
+}
+
+[class*="bg-token-sidebar-surface-secondary"] {
+  background-color: #1a1b26 !important;
+}
+
+[class*="bg-token-sidebar-surface-tertiary"] {
+  background-color: #24283b !important;
+}
+
+
+/* ---------------------------------------------------------
+   Generic ChatGPT surface tokens
+   --------------------------------------------------------- */
+
+[class*="bg-token-main-surface-primary"] {
+  background-color: #1a1b26 !important;
+}
+
+[class*="bg-token-main-surface-secondary"] {
+  background-color: #15161e !important;
+}
+
+[class*="bg-token-main-surface-tertiary"] {
+  background-color: #24283b !important;
+}
+
+
+/* ---------------------------------------------------------
+   Kill remaining pure-black utility backgrounds
+   --------------------------------------------------------- */
+
+[class~="bg-black"],
+[class*="bg-black/"],
+[class*="dark:bg-black"] {
+  background-color: #15161e !important;
+}
+
+
+/* ---------------------------------------------------------
+   Sidebar top + bottom regions
+   --------------------------------------------------------- */
+
+nav > div,
+aside > div {
+  border-color: #414868 !important;
+}
+
+
+/* Bottom account/profile area */
+
+nav [class*="sticky"],
+aside [class*="sticky"] {
+  background-color: #15161e !important;
+}
+
+
+/* ---------------------------------------------------------
+   Chat / Work selector
+   --------------------------------------------------------- */
+
+[role="tablist"] {
+  background-color: #15161e !important;
+  border-color: #414868 !important;
+}
+
+[role="tab"] {
+  color: #a9b1d6 !important;
+}
+
+[role="tab"][aria-selected="true"] {
+  background-color: #24283b !important;
+  color: #c0caf5 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Composer shell
+   --------------------------------------------------------- */
+
+[class*="composer"] {
+  border-color: #414868 !important;
+}
+
+[class*="composer"][class*="bg-"],
+form[class*="bg-"] {
+  background-color: #24283b !important;
+}
+
+
+/* ---------------------------------------------------------
+   Popovers / floating controls
+   --------------------------------------------------------- */
+
+[data-radix-popper-content-wrapper] > div,
+[role="menu"],
+[role="listbox"],
+[role="dialog"] {
+  background-color: #15161e !important;
+  border-color: #414868 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Strong fallback for literal black
+   --------------------------------------------------------- */
+
+[style*="background-color: rgb(0, 0, 0)"],
+[style*="background-color: #000"],
+[style*="background: rgb(0, 0, 0)"],
+[style*="background: #000"] {
+  background-color: #15161e !important;
+}

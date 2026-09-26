@@ -1,0 +1,510 @@
+/* =========================================================
+   GitHub — Tokyo Night
+   ========================================================= */
+
+:root {
+  --tn-bg: #1a1b26;
+  --tn-bg-dark: #15161e;
+  --tn-bg-soft: #24283b;
+  --tn-bg-hover: #292e42;
+  --tn-bg-active: #33467c;
+
+  --tn-border: #414868;
+
+  --tn-text: #c0caf5;
+  --tn-text-soft: #a9b1d6;
+  --tn-muted: #737aa2;
+
+  --tn-blue: #7aa2f7;
+  --tn-cyan: #7dcfff;
+  --tn-purple: #bb9af7;
+  --tn-green: #9ece6a;
+  --tn-yellow: #e0af68;
+  --tn-red: #f7768e;
+  --tn-orange: #ff9e64;
+
+  color-scheme: dark !important;
+
+  /* GitHub Primer variables */
+  --bgColor-default: var(--tn-bg) !important;
+  --bgColor-muted: var(--tn-bg-dark) !important;
+  --bgColor-inset: var(--tn-bg-dark) !important;
+  --bgColor-emphasis: var(--tn-bg-soft) !important;
+
+  --fgColor-default: var(--tn-text) !important;
+  --fgColor-muted: var(--tn-text-soft) !important;
+  --fgColor-onEmphasis: var(--tn-text) !important;
+
+  --borderColor-default: var(--tn-border) !important;
+  --borderColor-muted: #2f3549 !important;
+
+  --button-default-bgColor-rest: var(--tn-bg-soft) !important;
+  --button-default-bgColor-hover: var(--tn-bg-hover) !important;
+  --button-default-borderColor-rest: var(--tn-border) !important;
+
+  --control-bgColor-rest: var(--tn-bg-soft) !important;
+  --control-bgColor-hover: var(--tn-bg-hover) !important;
+
+  --overlay-bgColor: var(--tn-bg-dark) !important;
+
+  --focus-outlineColor: var(--tn-blue) !important;
+}
+
+
+/* =========================================================
+   Root surfaces
+   ========================================================= */
+
+html,
+body,
+.application-main,
+#js-pjax-container,
+#repo-content-pjax-container {
+  background: var(--tn-bg) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   Header
+   ========================================================= */
+
+.AppHeader,
+header,
+.Header,
+[data-target="react-app.embeddedData"] + div {
+  background-color: var(--tn-bg-dark) !important;
+  border-color: var(--tn-border) !important;
+}
+
+
+/* =========================================================
+   Repository / page surfaces
+   ========================================================= */
+
+.Layout-main,
+.Layout-sidebar,
+.Box,
+.Box-header,
+.Box-body,
+.Box-row,
+.BorderGrid,
+.BorderGrid-row,
+.repository-content,
+.feed-item-content {
+  background-color: var(--tn-bg) !important;
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+.Box-header {
+  background-color: var(--tn-bg-soft) !important;
+}
+
+
+/* =========================================================
+   Navigation / tabs
+   ========================================================= */
+
+.UnderlineNav,
+.UnderlineNav-body,
+.UnderlineNav-item,
+.tabnav,
+.tabnav-tab {
+  background-color: transparent !important;
+  border-color: var(--tn-border) !important;
+  color: var(--tn-text-soft) !important;
+}
+
+.UnderlineNav-item:hover,
+.tabnav-tab:hover {
+  color: var(--tn-text) !important;
+}
+
+.UnderlineNav-item.selected,
+.UnderlineNav-item[aria-current="page"],
+.tabnav-tab.selected {
+  color: var(--tn-blue) !important;
+  border-bottom-color: var(--tn-blue) !important;
+}
+
+
+/* =========================================================
+   Links
+   ========================================================= */
+
+a,
+.Link--primary,
+.Link--secondary {
+  color: var(--tn-blue) !important;
+}
+
+a:hover {
+  color: var(--tn-cyan) !important;
+}
+
+
+/* =========================================================
+   Text
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.markdown-body,
+.markdown-body p,
+.markdown-body li,
+.markdown-body td {
+  color: var(--tn-text) !important;
+}
+
+.color-fg-muted,
+.text-small,
+.f6,
+.note,
+.text-gray,
+.color-fg-subtle {
+  color: var(--tn-muted) !important;
+}
+
+
+/* =========================================================
+   Inputs / search
+   ========================================================= */
+
+input,
+textarea,
+select,
+.form-control,
+.FormControl-input,
+.FormControl-textarea,
+.QueryBuilder-StyledInput {
+  background-color: var(--tn-bg-soft) !important;
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+  caret-color: var(--tn-blue) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--tn-muted) !important;
+}
+
+
+/* =========================================================
+   Buttons
+   ========================================================= */
+
+button,
+.btn,
+.Button,
+[role="button"] {
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+.btn,
+.Button {
+  background-color: var(--tn-bg-soft) !important;
+}
+
+.btn:hover,
+.Button:hover,
+button:hover,
+[role="button"]:hover {
+  background-color: var(--tn-bg-hover) !important;
+}
+
+
+/* Primary green GitHub buttons */
+
+.btn-primary,
+.Button--primary {
+  background-color: #2a5d3a !important;
+  border-color: var(--tn-green) !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover,
+.Button--primary:hover {
+  background-color: #356f46 !important;
+}
+
+
+/* =========================================================
+   Dropdowns / menus / popovers
+   ========================================================= */
+
+.SelectMenu-modal,
+.SelectMenu-list,
+.SelectMenu-item,
+.dropdown-menu,
+.Overlay,
+.Popover-message,
+.ActionMenu-Overlay,
+[role="menu"],
+[role="dialog"],
+[role="listbox"] {
+  background-color: var(--tn-bg-dark) !important;
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+.SelectMenu-item:hover,
+.dropdown-item:hover,
+.ActionListItem:hover,
+[role="menuitem"]:hover,
+[role="option"]:hover {
+  background-color: var(--tn-bg-hover) !important;
+}
+
+
+/* =========================================================
+   Files / code browsing
+   ========================================================= */
+
+.react-directory-row,
+.Box-row,
+.js-navigation-item,
+[role="row"] {
+  border-color: var(--tn-border) !important;
+}
+
+.react-directory-row:hover,
+.Box-row:hover,
+.js-navigation-item:hover {
+  background-color: var(--tn-bg-hover) !important;
+}
+
+
+/* File viewer */
+
+.blob-wrapper,
+.blob-code,
+.blob-num,
+.highlight,
+.file,
+.file-header {
+  background-color: var(--tn-bg-dark) !important;
+  border-color: var(--tn-border) !important;
+}
+
+.blob-num {
+  color: var(--tn-muted) !important;
+}
+
+
+/* =========================================================
+   Markdown
+   ========================================================= */
+
+.markdown-body {
+  background-color: transparent !important;
+  color: var(--tn-text) !important;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-color: var(--tn-border) !important;
+}
+
+.markdown-body blockquote {
+  color: var(--tn-text-soft) !important;
+  border-left-color: var(--tn-purple) !important;
+}
+
+.markdown-body table tr {
+  background-color: var(--tn-bg) !important;
+  border-color: var(--tn-border) !important;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: var(--tn-bg-soft) !important;
+}
+
+.markdown-body th,
+.markdown-body td {
+  border-color: var(--tn-border) !important;
+}
+
+
+/* =========================================================
+   Inline code / code blocks
+   ========================================================= */
+
+code,
+tt {
+  background-color: var(--tn-bg-soft) !important;
+  color: var(--tn-cyan) !important;
+}
+
+pre,
+.markdown-body pre,
+.highlight pre {
+  background-color: var(--tn-bg-dark) !important;
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+
+/* =========================================================
+   Issues / PRs / discussions
+   ========================================================= */
+
+.timeline-comment,
+.timeline-comment-header,
+.js-comment,
+.discussion-item,
+.TimelineItem-body {
+  background-color: var(--tn-bg) !important;
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+.timeline-comment-header {
+  background-color: var(--tn-bg-soft) !important;
+}
+
+
+/* =========================================================
+   Labels / badges
+   ========================================================= */
+
+.Label,
+.State,
+.Counter {
+  border-color: var(--tn-border) !important;
+}
+
+
+/* =========================================================
+   Tables / lists
+   ========================================================= */
+
+table,
+tr,
+td,
+th {
+  border-color: var(--tn-border) !important;
+}
+
+tr:hover {
+  background-color: var(--tn-bg-hover) !important;
+}
+
+
+/* =========================================================
+   Cards / dashboard
+   ========================================================= */
+
+.dashboard-sidebar,
+.news,
+.feed-item,
+.BorderGrid-cell,
+.color-bg-subtle,
+.color-bg-muted {
+  background-color: var(--tn-bg-dark) !important;
+  border-color: var(--tn-border) !important;
+}
+
+
+/* =========================================================
+   Notifications / alerts
+   ========================================================= */
+
+.flash,
+.flash-warn,
+.flash-error,
+.flash-success {
+  background-color: var(--tn-bg-soft) !important;
+  border-color: var(--tn-border) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   Selection / focus
+   ========================================================= */
+
+::selection {
+  background-color: var(--tn-bg-active) !important;
+  color: var(--tn-text) !important;
+}
+
+*:focus-visible {
+  outline-color: var(--tn-blue) !important;
+}
+
+
+/* =========================================================
+   Scrollbars
+   ========================================================= */
+
+* {
+  scrollbar-color: var(--tn-border) var(--tn-bg-dark) !important;
+  scrollbar-width: thin !important;
+}
+
+
+/* =========================================================
+   Generic GitHub surface fallbacks
+   ========================================================= */
+
+.color-bg-default {
+  background-color: var(--tn-bg) !important;
+}
+
+.color-bg-subtle,
+.color-bg-muted,
+.color-bg-inset {
+  background-color: var(--tn-bg-dark) !important;
+}
+
+[class*="bgColor-default"] {
+  background-color: var(--tn-bg) !important;
+}
+
+[class*="bgColor-muted"],
+[class*="bgColor-inset"] {
+  background-color: var(--tn-bg-dark) !important;
+}
+
+
+/* =========================================================
+   White / black inline fallbacks
+   ========================================================= */
+
+[style*="background-color: white"],
+[style*="background-color:#fff"],
+[style*="background-color: #fff"],
+[style*="background: white"] {
+  background-color: var(--tn-bg-soft) !important;
+}
+
+[style*="background-color: black"],
+[style*="background-color:#000"],
+[style*="background-color: #000"],
+[style*="background: black"] {
+  background-color: var(--tn-bg-dark) !important;
+}
+
+
+/* =========================================================
+   Rounded surfaces
+   ========================================================= */
+
+.Box,
+.btn,
+.Button,
+input,
+textarea,
+select,
+.SelectMenu-modal,
+.Overlay,
+[role="dialog"],
+[role="menu"] {
+  border-radius: 8px !important;
+}

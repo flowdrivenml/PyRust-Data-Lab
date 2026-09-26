@@ -1,0 +1,47 @@
+# Reusable starting point for Python, data science, and Jupyter projects.
+# Create a separate environment for each project:
+#   conda env create -f environments/python-data-dev.yml -n my-project
+#
+# This file is separate from the Neovim configuration.
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python=3.12
+  - pip
+
+  # Data science
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - polars
+  - plotly
+  - dash
+
+  # JupyterLab
+  - jupyterlab>=4.1
+  - ipykernel
+  - ipywidgets
+  - ipympl
+  - jupytext
+  - jupyterlab-git
+
+  # Python development tools
+  - ruff
+  - mypy
+  - black
+  - isort
+
+  # JupyterLab extensions and Python language server
+  - pip:
+      - jupyterlab-lsp
+      - "python-lsp-server[all]"
+      - python-lsp-ruff
+      - pylsp-mypy
+      - jupyterlab-code-formatter
+      - jupyterlab-vim
+      - lckr_jupyterlab_variableinspector

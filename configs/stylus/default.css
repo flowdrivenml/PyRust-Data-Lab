@@ -1,0 +1,510 @@
+/* =========================================================
+   TOKYO NIGHT — GLOBAL AGGRESSIVE THEME
+   ========================================================= */
+
+:root {
+  --tn-bg: #1a1b26 !important;
+  --tn-bg-deep: #15161e !important;
+  --tn-bg-soft: #24283b !important;
+  --tn-bg-hover: #292e42 !important;
+  --tn-bg-active: #33467c !important;
+
+  --tn-border: #414868 !important;
+  --tn-border-soft: #2f3549 !important;
+
+  --tn-text: #c0caf5 !important;
+  --tn-text-soft: #a9b1d6 !important;
+  --tn-muted: #737aa2 !important;
+
+  --tn-blue: #7aa2f7 !important;
+  --tn-cyan: #7dcfff !important;
+  --tn-purple: #bb9af7 !important;
+  --tn-green: #9ece6a !important;
+  --tn-yellow: #e0af68 !important;
+  --tn-red: #f7768e !important;
+  --tn-orange: #ff9e64 !important;
+
+  color-scheme: dark !important;
+}
+
+
+/* =========================================================
+   PAGE ROOTS
+   ========================================================= */
+
+html,
+body,
+#root,
+#app,
+#__next {
+  background-color: var(--tn-bg) !important;
+  color: var(--tn-text) !important;
+}
+
+
+/* =========================================================
+   COMMON APP SURFACES
+   ========================================================= */
+
+main,
+nav,
+aside,
+header,
+footer,
+section,
+article {
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border-soft) !important;
+}
+
+
+/* Deep sidebar/header-like surfaces */
+
+nav,
+aside,
+header,
+footer {
+  background-color: var(--tn-bg-deep) !important;
+}
+
+
+/* Main content */
+
+main,
+section,
+article {
+  background-color: var(--tn-bg) !important;
+}
+
+
+/* =========================================================
+   COMMON CONTAINERS / CARDS / PANELS
+   ========================================================= */
+
+[role="main"],
+[role="navigation"],
+[role="complementary"],
+[role="banner"],
+[role="contentinfo"],
+[role="region"] {
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border-soft) !important;
+}
+
+
+/* Catch common naming conventions */
+
+[class*="card"],
+[class*="Card"],
+[class*="panel"],
+[class*="Panel"],
+[class*="surface"],
+[class*="Surface"],
+[class*="container"],
+[class*="Container"],
+[class*="sidebar"],
+[class*="Sidebar"],
+[class*="drawer"],
+[class*="Drawer"],
+[class*="modal"],
+[class*="Modal"],
+[class*="popover"],
+[class*="Popover"],
+[class*="menu"],
+[class*="Menu"] {
+  border-color: var(--tn-border-soft) !important;
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+body,
+p,
+span,
+div,
+li,
+dt,
+dd,
+label {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  color: var(--tn-text) !important;
+}
+
+small,
+time,
+[class*="muted"],
+[class*="secondary"],
+[class*="Secondary"] {
+  color: var(--tn-muted) !important;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+  color: var(--tn-blue) !important;
+}
+
+a:hover {
+  color: var(--tn-cyan) !important;
+}
+
+
+/* =========================================================
+   INPUTS / SEARCH / COMPOSERS
+   ========================================================= */
+
+input,
+textarea,
+select,
+[contenteditable="true"],
+[role="textbox"],
+[role="searchbox"],
+[role="combobox"] {
+  background-color: var(--tn-bg-soft) !important;
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+  caret-color: var(--tn-blue) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--tn-muted) !important;
+  opacity: 1 !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+[role="button"] {
+  color: var(--tn-text) !important;
+  border-color: var(--tn-border) !important;
+}
+
+button:hover,
+[role="button"]:hover {
+  background-color: var(--tn-bg-hover) !important;
+}
+
+button:active,
+[role="button"]:active {
+  background-color: var(--tn-bg-active) !important;
+}
+
+
+/* =========================================================
+   MENUS / POPUPS / DIALOGS
+   ========================================================= */
+
+dialog,
+[role="dialog"],
+[role="menu"],
+[role="listbox"],
+[role="tooltip"],
+[role="presentation"],
+[role="menuitem"],
+[role="option"] {
+  border-color: var(--tn-border) !important;
+}
+
+dialog,
+[role="dialog"],
+[role="menu"],
+[role="listbox"],
+[role="tooltip"] {
+  background-color: var(--tn-bg-deep) !important;
+  color: var(--tn-text) !important;
+}
+
+[role="menuitem"]:hover,
+[role="option"]:hover {
+  background-color: var(--tn-bg-hover) !important;
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+  border-color: var(--tn-border-soft) !important;
+}
+
+thead,
+th {
+  background-color: var(--tn-bg-soft) !important;
+  color: var(--tn-text) !important;
+}
+
+tbody,
+td {
+  color: var(--tn-text-soft) !important;
+}
+
+
+/* =========================================================
+   CODE
+   ========================================================= */
+
+pre,
+code,
+kbd,
+samp {
+  background-color: var(--tn-bg-deep) !important;
+  color: var(--tn-text) !important;
+}
+
+:not(pre) > code {
+  color: var(--tn-cyan) !important;
+}
+
+
+/* =========================================================
+   QUOTES
+   ========================================================= */
+
+blockquote {
+  color: var(--tn-text-soft) !important;
+  border-color: var(--tn-purple) !important;
+}
+
+
+/* =========================================================
+   SELECTION / FOCUS
+   ========================================================= */
+
+::selection {
+  background-color: var(--tn-bg-active) !important;
+  color: var(--tn-text) !important;
+}
+
+*:focus-visible {
+  outline-color: var(--tn-blue) !important;
+}
+
+
+/* =========================================================
+   CHECKBOXES / RADIO / RANGE
+   ========================================================= */
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="range"] {
+  accent-color: var(--tn-blue) !important;
+}
+
+
+/* =========================================================
+   SCROLLBARS
+   ========================================================= */
+
+* {
+  scrollbar-color: var(--tn-border) var(--tn-bg-deep) !important;
+  scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--tn-bg-deep) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tn-border) !important;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tn-muted) !important;
+}
+
+
+/* =========================================================
+   GENERIC BACKGROUND CLASS CATCHERS
+   ========================================================= */
+
+[class*="bg-white"],
+[class*="background-white"],
+[class*="BackgroundWhite"],
+[class*="white-background"] {
+  background-color: var(--tn-bg-soft) !important;
+}
+
+[class*="bg-black"],
+[class*="background-black"],
+[class*="BackgroundBlack"] {
+  background-color: var(--tn-bg-deep) !important;
+}
+
+[class*="bg-gray"],
+[class*="bg-grey"],
+[class*="background-gray"],
+[class*="background-grey"] {
+  background-color: var(--tn-bg-soft) !important;
+}
+
+
+/* =========================================================
+   INLINE STYLE OVERRIDES
+   ========================================================= */
+
+[style*="background-color: white"],
+[style*="background-color:white"],
+[style*="background: white"],
+[style*="background:white"],
+[style*="background-color: #fff"],
+[style*="background-color:#fff"],
+[style*="background-color: rgb(255, 255, 255)"],
+[style*="background-color:rgb(255, 255, 255)"] {
+  background-color: var(--tn-bg-soft) !important;
+}
+
+[style*="background-color: black"],
+[style*="background-color:black"],
+[style*="background: black"],
+[style*="background:black"],
+[style*="background-color: #000"],
+[style*="background-color:#000"],
+[style*="background-color: rgb(0, 0, 0)"],
+[style*="background-color:rgb(0, 0, 0)"] {
+  background-color: var(--tn-bg-deep) !important;
+}
+
+
+/* =========================================================
+   COMMON LIGHT SURFACES
+   ========================================================= */
+
+[style*="background-color: rgb(250"],
+[style*="background-color: rgb(248"],
+[style*="background-color: rgb(245"],
+[style*="background-color: rgb(240"] {
+  background-color: var(--tn-bg-soft) !important;
+}
+
+
+/* =========================================================
+   BORDERS
+   ========================================================= */
+
+hr {
+  border-color: var(--tn-border-soft) !important;
+}
+
+[class*="border"] {
+  border-color: var(--tn-border-soft) !important;
+}
+
+
+/* =========================================================
+   SVG / ICONS
+   ========================================================= */
+
+svg {
+  color: inherit;
+}
+
+
+/* =========================================================
+   IFRAMES
+   ========================================================= */
+
+iframe {
+  color-scheme: dark !important;
+}
+
+
+/* =========================================================
+   MEDIA EXCEPTIONS
+   Don't recolor actual media content
+   ========================================================= */
+
+img,
+video,
+canvas,
+picture {
+  filter: none !important;
+}
+
+
+/* =========================================================
+   ROUNDING
+   ========================================================= */
+
+button,
+input,
+textarea,
+select,
+dialog,
+[role="dialog"],
+[role="menu"],
+[role="listbox"] {
+  border-radius: 8px !important;
+}
+
+
+/* =========================================================
+   AGGRESSIVE TOKEN OVERRIDES
+   Common CSS variable naming patterns
+   ========================================================= */
+
+:root {
+  --background: #1a1b26 !important;
+  --background-primary: #1a1b26 !important;
+  --background-secondary: #15161e !important;
+  --background-tertiary: #24283b !important;
+
+  --bg-primary: #1a1b26 !important;
+  --bg-secondary: #15161e !important;
+  --bg-tertiary: #24283b !important;
+
+  --surface: #1a1b26 !important;
+  --surface-primary: #1a1b26 !important;
+  --surface-secondary: #15161e !important;
+  --surface-tertiary: #24283b !important;
+
+  --color-bg: #1a1b26 !important;
+  --color-background: #1a1b26 !important;
+
+  --text: #c0caf5 !important;
+  --text-primary: #c0caf5 !important;
+  --text-secondary: #a9b1d6 !important;
+  --text-muted: #737aa2 !important;
+
+  --foreground: #c0caf5 !important;
+  --foreground-primary: #c0caf5 !important;
+
+  --border: #414868 !important;
+  --border-color: #414868 !important;
+
+  --accent: #7aa2f7 !important;
+  --primary: #7aa2f7 !important;
+}

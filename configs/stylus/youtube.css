@@ -1,0 +1,190 @@
+/* =========================================================
+   YouTube — Tokyo Night polish fixes
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Selected sidebar item
+   Home / active navigation
+   --------------------------------------------------------- */
+
+ytd-guide-entry-renderer[active] #endpoint,
+ytd-guide-entry-renderer[active] tp-yt-paper-item,
+ytd-mini-guide-entry-renderer[active] {
+  background-color: #33467c !important;
+  color: #c0caf5 !important;
+}
+
+ytd-guide-entry-renderer[active] yt-icon,
+ytd-mini-guide-entry-renderer[active] yt-icon {
+  color: #7aa2f7 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Category / filter chips
+   --------------------------------------------------------- */
+
+yt-chip-cloud-chip-renderer #chip-container,
+yt-chip-cloud-chip-renderer yt-formatted-string,
+yt-chip-cloud-chip-renderer {
+  background-color: #24283b !important;
+  color: #c0caf5 !important;
+  border-color: #414868 !important;
+}
+
+
+/* Hover */
+
+yt-chip-cloud-chip-renderer:hover #chip-container {
+  background-color: #292e42 !important;
+  color: #7dcfff !important;
+}
+
+
+/* Selected category — fixes the white "All" chip */
+
+yt-chip-cloud-chip-renderer[selected] #chip-container,
+yt-chip-cloud-chip-renderer[aria-selected="true"] #chip-container {
+  background-color: #33467c !important;
+  color: #c0caf5 !important;
+  border-color: #7aa2f7 !important;
+}
+
+yt-chip-cloud-chip-renderer[selected] yt-formatted-string,
+yt-chip-cloud-chip-renderer[aria-selected="true"] yt-formatted-string {
+  color: #c0caf5 !important;
+}
+
+
+/* Newer YouTube chip implementation */
+
+yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"] {
+  --yt-spec-button-chip-background: #24283b !important;
+  --yt-spec-button-chip-background-hover: #292e42 !important;
+  --yt-spec-text-primary: #c0caf5 !important;
+}
+
+yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"] {
+  --yt-spec-button-chip-background: #33467c !important;
+  --yt-spec-text-primary: #c0caf5 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Chip bar itself
+   --------------------------------------------------------- */
+
+ytd-feed-filter-chip-bar-renderer,
+#chips-wrapper,
+#chips {
+  background-color: #1a1b26 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Search field
+   --------------------------------------------------------- */
+
+ytd-searchbox #container,
+#search-form,
+yt-searchbox {
+  background-color: #24283b !important;
+  border-color: #414868 !important;
+}
+
+ytd-searchbox input,
+input#search {
+  background-color: transparent !important;
+  color: #c0caf5 !important;
+}
+
+ytd-searchbox input::placeholder,
+input#search::placeholder {
+  color: #737aa2 !important;
+}
+
+
+/* Search button */
+
+#search-icon-legacy,
+button[aria-label="Search"] {
+  background-color: #24283b !important;
+  border-color: #414868 !important;
+}
+
+#search-icon-legacy:hover,
+button[aria-label="Search"]:hover {
+  background-color: #292e42 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Video shelves / card backing surfaces
+   --------------------------------------------------------- */
+
+ytd-rich-grid-row,
+ytd-rich-grid-renderer,
+ytd-rich-section-renderer,
+ytd-item-section-renderer {
+  background-color: #1a1b26 !important;
+}
+
+
+/* Card metadata / lower card areas */
+
+ytd-rich-item-renderer #details,
+ytd-video-renderer #dismissible,
+ytd-grid-video-renderer #details {
+  background-color: transparent !important;
+}
+
+
+/* ---------------------------------------------------------
+   Shorts / cards / secondary surfaces
+   --------------------------------------------------------- */
+
+#content.ytd-rich-section-renderer,
+#contents.ytd-rich-grid-renderer {
+  background-color: #1a1b26 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Secondary buttons
+   Create / menu-like controls
+   --------------------------------------------------------- */
+
+yt-button-shape button,
+ytd-button-renderer button {
+  background-color: #24283b !important;
+  color: #c0caf5 !important;
+  border-color: #414868 !important;
+}
+
+yt-button-shape button:hover,
+ytd-button-renderer button:hover {
+  background-color: #292e42 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Generic selected states
+   --------------------------------------------------------- */
+
+[aria-selected="true"],
+[selected] {
+  border-color: #7aa2f7 !important;
+}
+
+
+/* ---------------------------------------------------------
+   Avoid accidental white UI surfaces
+   --------------------------------------------------------- */
+
+yt-chip-cloud-chip-renderer [style*="background-color: white"],
+yt-chip-cloud-chip-renderer [style*="background-color: rgb(255"],
+yt-chip-cloud-chip-renderer [style*="background: white"] {
+  background-color: #33467c !important;
+  color: #c0caf5 !important;
+}
