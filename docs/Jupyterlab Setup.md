@@ -38,7 +38,7 @@ JupyterLab does not load `custom.css` by default. Enable it in `~/.jupyter/jupyt
 c.LabApp.custom_css = True
 ```
 
-If that file does not exist, create it. Restart JupyterLab after changing the stylesheet or configuration. The official JupyterLab instructions describe this `custom.css` path and `LabApp.custom_css` setting. :chatgpt-content-reference{index="0"}
+If that file does not exist, create it. Restart JupyterLab after changing the stylesheet or configuration. The official JupyterLab instructions describe this `custom.css` path and `LabApp.custom_css` setting.
 
 You can also select the built-in dark theme through **Settings → Theme**. It provides the base appearance; the custom stylesheet applies my Tokyo Night colors and extra styling.
 
@@ -75,7 +75,7 @@ JupyterLab’s extensions and related packages can have version compatibility re
 
 ## Add JupyterLab Language Servers
 
-The Conda template includes the JupyterLab LSP integration and Python language-server packages. The LSP integration does not install every language server by itself: each server needs to be installed separately and available to JupyterLab. :chatgpt-content-reference{index="2"}
+The Conda template includes the JupyterLab LSP integration and Python language-server packages. The LSP integration does not install every language server by itself: each server needs to be installed separately and available to JupyterLab.
 
 For Node.js-based servers, install Node.js and npm, then install the servers in a shared location outside the Neovim configuration:
 

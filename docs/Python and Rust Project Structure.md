@@ -148,8 +148,7 @@ python-source = "src"
 module-name = "my_project._native"
 ```
 
-The values `my-project`, `my_project`, and `_native` are example names. The Rust extension’s module name must match the name configured in the Rust crate and its PyO3 module declaration. Maturin documents the `manifest-path`, `python-source`, and dotted `module-name` settings. :chatgpt-content-reference{index="4"}
-
+The values `my-project`, `my_project`, and `_native` are example names. The Rust extension’s module name must match the name configured in the Rust crate and its PyO3 module declaration. Maturin documents the `manifest-path`, `python-source`, and dotted `module-name` settings.
 ## Create a Python Project Environment
 
 I keep the reusable Conda template in the general development-setup repository, separate from Neovim—for example:
@@ -189,7 +188,7 @@ For a Python/Rust extension using the Maturin configuration above, build and ins
 maturin develop --extras dev
 ```
 
-Maturin’s `develop` command builds the Rust extension in development mode and installs it into the active environment. Re-run it after changing Rust code so the Python package uses the newly built extension. Changes to Python files in the mixed layout can be used directly from the source tree in an editable install. :chatgpt-content-reference{index="5"}
+Maturin’s `develop` command builds the Rust extension in development mode and installs it into the active environment. Re-run it after changing Rust code so the Python package uses the newly built extension. Changes to Python files in the mixed layout can be used directly from the source tree in an editable install.
 
 Rust dependencies belong in `rust/Cargo.toml`. For an application or workspace, keep the resulting `Cargo.lock` in Git so other developers can resolve the same dependency versions.
 

@@ -48,7 +48,7 @@ Here are five places to explore:
 - [Pexels Videos](https://www.pexels.com/videos/) — free stock footage; check the license for your intended use.
 - [Mixkit Stock Video](https://mixkit.co/free-stock-video/) — HD and 4K clips, with license information on the site. 
 
-**Steam note:** Wallpaper Engine’s Workshop content is designed for Wallpaper Engine. On Linux, using it with Plasma generally requires a community project or plugin, and compatibility can vary by Plasma version and wallpaper type. Check the installation instructions and current issues for the specific project before setting it up. One Plasma 6 community option is the [Wallpaper Engine for KDE project](https://github.com/RainyPixel/wallpaper-engine-kde-plugin). 
+**Steam note:** Wallpaper Engine’s Workshop content is designed for Wallpaper Engine. On Linux, using it with Plasma generally requires a community project or plugin, and compatibility can vary by Plasma version and wallpaper type. Check the installation instructions and current issues for the specific project before setting it up. One Plasma 6 community option is the [Wallpaper Engine for KDE project](https://github.com/RainyPixel/wallpaper-engine-kde-plugin).
 
 If you want a simpler setup, download a video file from one of the video sites and set it as the background with Hidamari.
 
@@ -56,8 +56,8 @@ If you want a simpler setup, download a video file from one of the video sites a
 
 Still wallpapers are lighter on system resources and can look just as good. These five sites are useful starting points:
 
-- [Wallhaven](https://wallhaven.cc/) — a large wallpaper collection with search and filters. 
-- [Unsplash Wallpapers](https://unsplash.com/wallpapers) — photography and desktop backgrounds. 
+- [Wallhaven](https://wallhaven.cc/) — a large wallpaper collection with search and filters.
+- [Unsplash Wallpapers](https://unsplash.com/wallpapers) — photography and desktop backgrounds.
 - [Pexels Wallpapers](https://www.pexels.com/discover/wallpapers/) — downloadable wallpapers and photographs. 
 - [Pixabay Wallpapers](https://pixabay.com/images/search/wallpaper/) — illustrations, photos, and backgrounds.
 - [DeviantArt](https://www.deviantart.com/) — community-made digital art and wallpapers. Check the artist’s download and usage terms.

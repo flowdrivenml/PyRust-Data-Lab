@@ -9,7 +9,7 @@ Ghostty is my favorite terminal. I like its speed and customization, and the tra
 
 ## Download Ghostty on Kubuntu
 
-Ghostty is available in the official Ubuntu package repository for Ubuntu 26.04 and newer. On Kubuntu, install it from a terminal with: :chatgpt-content-reference{index="0"}
+Ghostty is available in the official Ubuntu package repository for Ubuntu 26.04 and newer. On Kubuntu, install it from a terminal with:
 
 ```bash
 sudo apt update
@@ -32,7 +32,7 @@ Ghostty reads a text-based configuration file from the XDG configuration directo
 ~/.config/ghostty/config.ghostty
 ```
 
-Ghostty versions before 1.2.3 used the filename `config`. Current versions still recognize it, but `config.ghostty` is the current name. :chatgpt-content-reference{index="1"}
+Ghostty versions before 1.2.3 used the filename `config`. Current versions still recognize it, but `config.ghostty` is the current name.
 
 I keep the reusable Ghostty configuration in the setup repository, separate from the Neovim configuration. It contains my Tokyo Night colors, JetBrains Mono font, window appearance, transparency and blur, mouse behavior, clipboard selection, and keybindings.
 
@@ -42,7 +42,7 @@ To open the live configuration in Neovim:
 nvim ~/.config/ghostty/config.ghostty
 ```
 
-Ghostty reloads its configuration on Linux with **Ctrl+Shift+,**. :chatgpt-content-reference{index="2"}
+Ghostty reloads its configuration on Linux with **Ctrl+Shift+,**
 
 ## Customize the Terminal
 
@@ -60,7 +60,7 @@ To inspect the default configuration and documented settings:
 ghostty +show-config --default --docs
 ```
 
-The [configuration reference](https://ghostty.org/docs/config/reference) documents available settings, and the [themes guide](https://ghostty.org/docs/features/theme) explains how Ghostty finds theme files. :chatgpt-content-reference{index="3"}
+The [configuration reference](https://ghostty.org/docs/config/reference) documents available settings, and the [themes guide](https://ghostty.org/docs/features/theme) explains how Ghostty finds theme files.
 
 ## Useful Ghostty Links
 

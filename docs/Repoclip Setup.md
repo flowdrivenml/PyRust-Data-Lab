@@ -14,7 +14,7 @@ I do not use AI to generate an entire application blindly. I often ask it to sug
 
 Repoclip gives me a quick way to collect selected project files into one AI-friendly text snapshot, then copy that snapshot to the clipboard. I can review it and paste it into a chatbot when I want help with a specific project.
 
-Repoclip is my Zsh function; it uses [Repomix](https://github.com/yamadashy/repomix) to build the project snapshot. Repomix can also show a token-count tree, which helps estimate how large the context will be. :chatgpt-content-reference{index="0"}
+Repoclip is my Zsh function; it uses [Repomix](https://github.com/yamadashy/repomix) to build the project snapshot. Repomix can also show a token-count tree, which helps estimate how large the context will be.
 
 ## What You Need
 
@@ -43,7 +43,7 @@ sudo apt update
 sudo apt install wl-clipboard
 ```
 
-Ubuntu packages `wl-clipboard` as the command-line Wayland clipboard utility. :chatgpt-content-reference{index="1"}
+Ubuntu packages `wl-clipboard` as the command-line Wayland clipboard utility.
 
 If you use an X11 session or want the fallback clipboard utility as well, install `xclip`:
 
@@ -162,6 +162,6 @@ repoclip --no-gitignore src
 
 ## How It Works
 
-The function runs Repomix twice. First, it prints the token-count tree so I can see the selected project content and approximate context size. Then it creates a plain-text snapshot and sends it to the clipboard with `wl-copy` or `xclip`. Repomix supports both the token-count tree and standard-output modes used by this function. :chatgpt-content-reference{index="2"}
+The function runs Repomix twice. First, it prints the token-count tree so I can see the selected project content and approximate context size. Then it creates a plain-text snapshot and sends it to the clipboard with `wl-copy` or `xclip`. Repomix supports both the token-count tree and standard-output modes used by this function.
 
 After it prints **Done.**, paste the clipboard contents into the chatbot and ask a focused question about the project.
