@@ -1,1 +1,10 @@
-[{"url": "sqlite:/hom", "name": "engine.db"}, {"url": "s", "name": ""}]
+[
+  {
+    "url": "sqlite:/home/pasha/projects/dutch_leren/data/engine.db",
+    "name": "Dutch Leren"
+  },
+  {
+    "url": "postgresql://marketforge:pashka303030@127.0.0.1:5432/marketforge",
+    "name": "MarketForge"
+  }
+]

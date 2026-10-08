@@ -12,22 +12,6 @@ return {
     end,
   },
   {
-    "mrcjkb/rustaceanvim",
-    ft = { "rust" },
-    config = function()
-      vim.g.rustaceanvim = {
-        server = {
-          cmd = { "rustup", "run", "stable", "rust-analyzer" },
-          settings = {
-            ["rust-analyzer"] = {
-              inlayHints = { enable = false },
-            },
-          },
-        },
-      }
-    end,
-  },
-  {
     "saecki/crates.nvim",
     event = { "BufRead Cargo.toml" },
     dependencies = { "nvim-lua/plenary.nvim" },
